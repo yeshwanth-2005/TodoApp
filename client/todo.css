@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: #f4f4f4;
+  }
+  
+  #todo-box {
+    width: 90%;
+    max-width: 600px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 100px; /* to create space for the fixed button */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #f4f4f4;
+  }
+  
+  #input-box {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #input-box input {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #222;
+    color: #f4f4f4;
+  }
+  
+  #input-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  #input-box button:hover { 
+    background-color: #0056b3;
+  }
+  
+  #todos-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #container {
+    margin-top: 20px;
+  }
+  
+  #container .todo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid #444;
+  }
+  
+  #container .todo .title-child , .description-child{
+  width: 8rem;
+  height: auto;
+  justify-content: start;
+  word-wrap: break-word;
+  }
+  
+  #container > div:last-child {
+    border-bottom: none;
+  }
+  
+  button {
+    padding: 0.65rem 1.3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+    button[onclick^="deleteTodo"] {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button[onclick^="deleteTodo"]:hover {
+    background-color: #b02a37;
+  }
+  
+  button[onclick^="editTodo"] {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  button[onclick^="editTodo"]:hover {
+    background-color: #e0a800;
+  }
+  
+  .done-btn {
+    right: 100px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .done-btn:hover{
+    background-color: #218838;
+  }
+  

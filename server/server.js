@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const path = require("path");
-const todoRoutes = require("./server/routes/todoRoutes.js");
+const todoRoutes = require("./routes/todoRoutes.js");
 
 const app = express();
 const port = 1234;
